@@ -1,3 +1,6 @@
+#-------------------------------------------------------------------------------
+# My algorithms (may not be refactored)
+#-------------------------------------------------------------------------------
 # Bubblesort
 #   o(n**2)
 
@@ -18,4 +21,15 @@ function bubblesort(arr){
         }
     }
     return arr
+}
+
+
+
+#-------------------------------------------------------------------------------
+# Algorithms and other code gotten from the web
+#-------------------------------------------------------------------------------
+
+# Array Shuffler
+function shuffleArray(array) {
+   return array.sort( ()=>Math.random()-0.5 );
 }
