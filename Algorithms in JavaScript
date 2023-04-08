@@ -1,0 +1,21 @@
+# Bubblesort
+#   o(n**2)
+
+function bubblesort(arr){
+    const len = arr.length;
+    let is_sorted = false;
+    while (! is_sorted) {
+        is_sorted = true;
+        let index = 0;
+        while (index < len) {
+            if (arr[index] > arr[index + 1]) {
+                let tempnum = arr[index];
+                arr[index] = arr[index + 1];
+                arr[index + 1] = tempnum;
+                is_sorted = false;
+            }
+            index += 1;
+        }
+    }
+    return arr
+}
